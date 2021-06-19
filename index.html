@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Pokemon web app</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./styles.css" />
+	<head>
+		<title>Pokemon web app</title>
+		<link rel="icon" href="favicon.ico" />
+		<link rel="stylesheet" href="./styles.css" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/images/pngegg.png" alt="" width="60px" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="./pages/capturar.html">Capturar</a>
-            <a class="nav-link" href="#">Pokedex</a>
-            <a class="nav-link" href="#">Mochila</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <h1>Pokemon App</h1>
-    <img src="./assets/images/pokemon/004.png" alt="" id="img01" />
-    <button class="btn btn-primary" onclick="evolucionar()">Evolucionar</button>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
 
-    <div class="container">
-      <h1>Quick's Pokedex</h1>
-      <ul id="pokedex"></ul>
-    </div>
+		<!-- NES.css library to add retro styles -->
+		<link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css" />
+		<!-- Add the PressStart2P font-->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
 
-    <script>
-      const evolucionar = () => {
-        let image = document.getElementById("img01");
-        console.log(image);
-        image.src = "./assets/images/pokemon/005.png";
-      };
-    </script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
 
-    <script src="pokeFunctions.js"></script>
-  </body>
+		<style>
+			html,
+			body,
+			pre,
+			code,
+			kbd,
+			samp {
+				font-family: "Press Start 2P", cursive;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img
+						src="./assets/images/pokeicon.png"
+						alt="Pokemon icon"
+						width="60px"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" href="./pages/evolucionar.html">Evolucionar</a>
+						<a class="nav-link" href="./pages/capturar.html">Capturar</a>
+						<a class="nav-link" href="./pages/pokedex.html">Pokedex</a>
+						<a class="nav-link" href="#">Mochila</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<h1 style="margin: 24px 0 44px 0">Pokemon App</h1>
+
+		<div class="nes-container with-title is-centered">
+			<p>
+				¡Bienvenido a mi Pokemon app chaval, aquí comenzará tu próxima aventura!
+			</p>
+		</div>
+
+		<div class="lists" style="margin-top: 32px">
+			<ul class="nes-list is-disc">
+				<li class="my-4">
+					¡Puedes elegir la sección para
+					<span class="nes-text is-primary">evolucionar</span> tu Pokemón!
+				</li>
+				<li class="my-4">
+					¡También puedes capturar un Pokemón salvaje,
+					<span class="nes-text is-error">pero ten cuidado</span>!
+				</li>
+				<li class="my-4">
+					¡Puedes consultar nuestra
+					<span class="nes-text is-success">Pokedex</span> para conocer todos
+					los pokemones registrados!
+				</li>
+				<li class="my-4">
+					¡Más adelante, podrás ver tu caña de pescar, tu bicicleta y todas las
+					bayas que recolectes en tu mochila!
+				</li>
+			</ul>
+		</div>
+
+		<script src="pokeFunctions.js"></script>
+	</body>
 </html>
