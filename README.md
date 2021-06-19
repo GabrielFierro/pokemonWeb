@@ -8,7 +8,6 @@
 
 ## Preview
 
-![Pokemon Web](https://github.com/GabrielFierro/pokemonWeb/tree/master/assets/images/webpage.png)
 ![Pokemon Web](https://github.com/GabrielFierro/pokemonWeb/blob/master/assets/images/webpage.png)
 
 <hr />
