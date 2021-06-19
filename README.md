@@ -12,7 +12,7 @@
 
 <hr />
 
-##En la página podrás visualizar diferentes secciones tales como:
+## En la página podrás visualizar diferentes secciones tales como:
 
 - Página principal: Se muestra el título de la página web con una breve descripción, y una lista con todo lo que se puede hacer en la misma.
 - Evolucionar: En la cual podrás ver un pokemón, que al hacer click en el botón "Evolucionar" cambia la imágen por la evolución del mismo.
