@@ -19,6 +19,8 @@
 - Capturar: Acá podemos ver un Pokemón que al hacer click en el botón "Capturar Pokemón" se mostrará una imágen de una pokebola en movimiento, simulando que se está capturando dicho pokemón y, luego se mostrará una imágen inmovil junto a un mensaje informando de que el pokemón ha sido capturado.
 - Pokedex: En ésta sección podemos visualizar los 150 pokemones iniciales.
 
+### Próximamente añadiré una sección para que puedas elegir tu pokemón inicial.
+
 <hr>
 
 Guía de cómo descargar éste repositorio para modificarlo
