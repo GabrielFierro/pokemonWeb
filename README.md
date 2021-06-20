@@ -1,6 +1,6 @@
 <h1>Pokemon Web</h1>
 
-<p>Página web hecha con HTML, CSS, JS y la libreria NES.css para darle estilos retros.
+<p>Página web hecha con HTML, CSS, JS y las librerías Bootstrap y NES.css para darle estilos retros.
 Ésta página fue hecha en el curso introductorio al desarrollo web dictado por Agustín Chiarotto.
 </p>
 
