@@ -24,5 +24,5 @@
 Guía de cómo descargar éste repositorio para modificarlo
 
 1. Clonar el repositorio en tu computadora (elige el directorio que desees).
-2. Una vez clonado, dirígete al directorio dónde se encuentra el proyecto desarrolloWeb, una vez dentro abre una terminal (puede ser la terminal de vscode, o puedes utilizar git bash) y escribe el comando npm install. Con ésto podrás instalar todas las dependencias y paquetes que Node te provee para poder ejecutar éste proyecto.
+2. Una vez clonado, dirígete al directorio dónde se encuentra el proyecto desarrolloWeb, una vez dentro abre una terminal (puede ser la terminal de vscode, o puedes utilizar git bash) y escribe el comando npm install. Con ésto podrás instalar todas las dependencias y paquetes que npm te provee para poder ejecutar éste proyecto.
 3. Ya puedes ver el proyecto funcionando en tu computadora.
